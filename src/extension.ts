@@ -39,7 +39,7 @@ export async function activate(context: vscode.ExtensionContext) {
 			const filePath = 'rack-exec.jar';
 			const cwd = __dirname;
 
-			const cmd = `java -jar ${filePath} -K 10 -task suggestAPI -query "${query}"`;
+			const cmd = `java -jar ${filePath} -K 999 -task suggestAPI -query "${query}"`;
 			const { stdout, stderr } = await execAsync(cmd, { cwd: __dirname });
 
 			// first line of stderr will be "Reading POS tagger model"
@@ -56,7 +56,23 @@ export async function activate(context: vscode.ExtensionContext) {
 				return generateQuery();
 			}
 			suggestions[0] = 'All';
-			vscode.window.showInformationMessage(suggestions.join());
+			
+			const picks = await vscode.window.showQuickPick(suggestions, {
+				placeHolder: 'Select the APIs you want to search with and press enter',
+				canPickMany: true,
+			});
+			if (!picks) {
+				return;
+			}
+
+			let googleQuery;
+			if (picks.includes('All')) {
+				googleQuery = suggestions.slice(1).join(' ');
+			} else {
+				googleQuery = picks.join(' ');
+			}
+			const url = `https://google.com/search?q=${googleQuery}`;
+			vscode.env.openExternal(vscode.Uri.parse(url));
 		} catch (err) {
 			console.error(err);
 		}
