@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="RACK-Replication-Package">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rack-exec.jar!/" />
+      <root url="jar://$PROJECT_DIR$/rack-exec-0.0.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -6,24 +6,37 @@
 	"engines": {
 		"vscode": "^1.46.0"
 	},
+	"keywords": [
+		"rack",
+		"nlp2api", 
+		"java", 
+		"nlp", 
+		"api", 
+		"crowdsource", 
+		"masud", 
+		"rahman", 
+		"parvez", 
+		"robin", 
+		"parvezmrobin"
+	],
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:rack.helloWorld"
+        "onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "rack.helloWorld",
-				"title": "Hello World"
+				"command": "rack.rack",
+				"title": "RACK"
 			}
 		]
 	},
 	"scripts": {
 		"vscode:prepublish": "yarn run compile",
-		"compile": "tsc -p ./",
+		"compile": "tsc -p ./ && Xcopy /E /Y src\\Rack-Replication-Package\\ out\\",
 		"lint": "eslint src --ext ts",
 		"watch": "tsc -watch -p ./",
 		"pretest": "yarn run compile && yarn run lint",
