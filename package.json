@@ -1,17 +1,21 @@
 {
 	"name": "rack",
-	"displayName": "rack",
+	"displayName": "RACK",
+	"license": "MIT",
 	"description": "Write query as human, search as computer",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"engines": {
 		"vscode": "^1.46.0"
 	},
+	"publisher": "parvezmrobin",
 	"keywords": [
 		"rack",
 		"nlp2api", 
 		"java", 
 		"nlp", 
 		"api", 
+		"query",
+		"search",
 		"crowdsource", 
 		"masud", 
 		"rahman", 
