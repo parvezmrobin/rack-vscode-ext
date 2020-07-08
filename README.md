@@ -32,4 +32,6 @@ so that you don't have to take the headache to find the right code.
 
 Initial release.
 
-Reference: M. M. Rahman, C. K. Roy and D. Lo, "RACK: Automatic API Recommendation Using Crowdsourced Knowledge," 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER), Suita, 2016, pp. 349-359, doi: 10.1109/SANER.2016.80.
+## Reference
+
+ M. M. Rahman, C. K. Roy and D. Lo, "RACK: Automatic API Recommendation Using Crowdsourced Knowledge," 2016 IEEE 23rd International Conference on Software Analysis, Evolution, and Reengineering (SANER), Suita, 2016, pp. 349-359, doi: 10.1109/SANER.2016.80.
