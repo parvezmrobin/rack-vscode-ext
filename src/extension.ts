@@ -3,8 +3,6 @@
 import * as vscode from 'vscode';
 import { exec } from 'child_process';
 import { promisify } from 'util';
-import { join } from 'path';
-import { error } from 'console';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed

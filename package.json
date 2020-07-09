@@ -7,27 +7,31 @@
 	"engines": {
 		"vscode": "^1.46.0"
 	},
+	"repository": {
+		"url": "https://github.com/parvezmrobin/rack-vscode-ext.git",
+		"type": "git"
+	},
 	"publisher": "parvezmrobin",
 	"keywords": [
 		"rack",
-		"nlp2api", 
-		"java", 
-		"nlp", 
-		"api", 
+		"nlp2api",
+		"java",
+		"nlp",
+		"api",
 		"query",
 		"search",
-		"crowdsource", 
-		"masud", 
-		"rahman", 
-		"parvez", 
-		"robin", 
+		"crowdsource",
+		"masud",
+		"rahman",
+		"parvez",
+		"robin",
 		"parvezmrobin"
 	],
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "onStartupFinished"
+		"onStartupFinished"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
